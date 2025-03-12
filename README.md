@@ -1,46 +1,49 @@
-BELUGA
+
+# CyberShield Scanner
 
 This project is a malware scanner web application built with a Flask backend and an HTML/CSS/JavaScript frontend. Users can upload files to be scanned for malicious indicators. This is done by using , Hashing API ,YARA rules, PE analysis, and entropy measurement The app features a stylish interface with a loading bar and returns a detailed verdict and risk report in JSON format.
-Repository Structure
 
-├── CyberShieldScanner
-    ├── CyberShieldScanner
-        
-        ├──app.py                   # Flask application entry point
-        ├──rules                    # contains yara rules
-        ├── requirements.txt        # Python dependencies
-        ├── static                 
-        │   ├── script.js           # JavaScript for frontend functionality
-        │   └── styles.css          # CSS styling
-        └── templates               
-            └── index.html          # Main HTML file
-        
-|── README.md
-|──index.html
-    
 
-First time setup
+
+
+## Authors
+
+- [@Ekansh2406](https://github.com/Ekansh2406)
+- [@PotatoORG](https://github.com/PotatoORG)
+- [@Harsh Anand](https://www.linkedin.com/in/harsh-anand-iitm/)
+- [@Owais-Sadiqque-Dayderh](https://github.com/owais-sadiqque-dayderh)
+
+
+
+
+## Deployment
 
 First clone this repository using git
 
+```bash
 git clone https://github.com/Ekansh2406/bluepill.git
+```
 
 Then you have to activate the virtual environment by the following command inside the repository
 
+```bash
 source venv/bin/activate
+```
 
 Then jump to running the script. If it shows "nodes not found" , install the following python modules
 
+```bash
 sudo apt install pyhton3-flask python3-pefile python3-pdfminor
+```
 
-Running the script
+Inside the CyberShieldScanner/CyberShieldScanner ,run 
 
-Inside the CyberShieldScanner/CyberShieldScanner , run the python script app.py
-
+```bash
 python3 app.py
+```
 
-Open the link shown in terminal in web browser
-Summary of code
+And At Last Finally Open the link shown in terminal in web browser and now No Malware Can Enter your Device.
+## Features
 
 This Python code builds a Flask web app that accepts file uploads for malware detection.
 
@@ -63,7 +66,8 @@ Document and PDF files are scanned for suspicious keywords, and PDF text is extr
 The final verdict—either “Clean” or “Malicious”—is returned in a JSON response along with a risk report detailing any findings.
 
 After analysis, the uploaded file is removed to maintain security.
-WARNINGS
+
+## Warnings
 
 Might not work on WINDOWS.
 
