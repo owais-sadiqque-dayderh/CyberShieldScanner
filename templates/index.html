@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malware Scanner</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Malware Scanner</h1>
+    <p>Upload a file or paste file content below to scan for malicious indicators.</p>
+    
+    <div class="upload-section">
+      <input type="file" id="fileInput">
+      <button id="scanButton">Scan File</button>
+    </div>
+    
+       
+    <div id="loadingBar" class="loading-bar" style="display: none;">
+      <div class="progress"></div>
+    </div>
+    
+    <div id="result"></div>
+  </div>
+  
+  <script src="/static/script.js"></script>
+</body>
+</html>

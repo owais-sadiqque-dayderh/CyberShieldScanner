@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00FF00;
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur163.cur'), auto; /* custom hacking-style cursor */
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00FF00;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  .upload-section,
+  .paste-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  input[type="file"],
+  
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background: #00FF00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00cc00;
+  }
+  
+  .loading-bar {
+    width: 100%;
+    background: #444;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 20px;
+    background: #00FF00;
+    animation: loading 2s linear infinite;
+  }
+  
+  @keyframes loading {
+    0% { width: 0%; }
+    50% { width: 100%; }
+    100% { width: 0%; }
+  }
+  
+  #result {
+    padding: 10px;
+    background: #111;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    min-height: 50px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
